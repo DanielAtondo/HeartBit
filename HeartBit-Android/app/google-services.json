@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "217163407203",
+    "project_id": "heartbit-fe08a",
+    "storage_bucket": "heartbit-fe08a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217163407203:android:0f1a1e6893d3fe5d47bd56",
+        "android_client_info": {
+          "package_name": "com.example.heartbit_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217163407203-pjb7dkerrf90ihdal4i4ialdlehhmt8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQWQY5tMXjy0FjhS4rycJx_hcozVUwhyU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217163407203-pjb7dkerrf90ihdal4i4ialdlehhmt8m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
