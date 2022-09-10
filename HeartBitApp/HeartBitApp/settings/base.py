@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'theme',
     'django_browser_reload',
     'landing',
+    'pwa',
 ]
 
 MIDDLEWARE = [
@@ -120,7 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [BASE_DIR.parent / 'theme/static']
+STATICFILES_DIRS = [BASE_DIR.parent / 'theme/static', os.path.join(BASE_DIR, 'static')]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -141,3 +142,32 @@ MEDIA_ROOT = "/files/"
 MEDIA_URL = "/files/"
 
 STATIC_ROOT = BASE_DIR / "static_root"
+PWA_APP_NAME = 'My App'
+PWA_APP_DESCRIPTION = "My app description"
+PWA_APP_THEME_COLOR = '#0A0302'
+PWA_APP_BACKGROUND_COLOR = '#ffffff'
+PWA_APP_DISPLAY = 'standalone'
+PWA_APP_SCOPE = '/'
+PWA_APP_ORIENTATION = 'any'
+PWA_APP_START_URL = '/'
+PWA_APP_STATUS_BAR_COLOR = 'default'
+PWA_APP_ICONS = [
+    {
+        'src': '/static/images/my_app_icon.png',
+        'sizes': '160x160'
+    }
+]
+PWA_APP_ICONS_APPLE = [
+    {
+        'src': '/static/images/my_apple_icon.png',
+        'sizes': '160x160'
+    }
+]
+PWA_APP_SPLASH_SCREEN = [
+    {
+        'src': '/static/images/icons/splash-640x1136.png',
+        'media': '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)'
+    }
+]
+PWA_APP_DIR = 'ltr'
+PWA_APP_LANG = 'en-US'

@@ -6,3 +6,7 @@ from django.contrib.auth.decorators import login_required
 def index(request):
     context = {"title": "Dashboard"}
     return render(request, "landing/index.html", context)
+
+def login(request):
+    context = {"title": "Log In"}
+    return render(request, "landing/login.html", context)
